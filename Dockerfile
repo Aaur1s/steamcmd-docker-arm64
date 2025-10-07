@@ -32,7 +32,15 @@ RUN apt-get update && \
     expect \
     curl \
     sudo \
-    fuse
+    fuse \
+    qtbase5-dev \
+    qttools5-dev-tools \
+    qtchooser \
+    libxcb-xinerama0-dev \
+    libx11-dev \
+    libxrandr-dev \
+    libgl1-mesa-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 # Create a new user and set their home directory
 RUN useradd -m -s /bin/bash fex
