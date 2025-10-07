@@ -69,7 +69,7 @@ USER root
 
 RUN echo 'root:steamcmd' | chpasswd
 
-USER steam
+#USER steam
 
 WORKDIR /home/steam/.fex-emu/RootFS/
 
