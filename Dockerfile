@@ -59,8 +59,7 @@ RUN git clone --depth 1 --recurse-submodules https://github.com/FEX-Emu/FEX.git 
 
 WORKDIR /home/fex/FEX/Build
 
-RUN sudo ninja install && \
-    sudo ninja binfmt_misc
+RUN sudo ninja install
 
 RUN sudo useradd -m -s /bin/bash steam
 
