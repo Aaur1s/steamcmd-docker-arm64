@@ -40,7 +40,7 @@ Once you've built the Docker image, you can run the SteamCMD container using the
 1. Run the SteamCMD container:
 
    ```bash
-   docker run -it steamcmd-arm64
+   docker run -it steamcmd-arm64 sh -c 'FEXBash ./steamcmd.sh'
    ```
 
    This command starts an interactive session inside the container.
